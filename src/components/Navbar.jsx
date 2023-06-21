@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import Logo from '/Logo.svg';
 import { MdEast } from 'react-icons/md';
+import Button from './Button';
 const Navbar = () => {
   return (
     <nav className='bg-[#FFFFFF] w-full  z-50 fixed top-0'>
@@ -16,14 +17,19 @@ const Navbar = () => {
             <NavLink to={'/players'}>About Us</NavLink>
           </div>
           <div className=' gap-4 flex font-bold'>
-            <button className=' py-3 px-5 text-base rounded-lg border-green border border-solid text-green flex items-center gap-4'>
-              <span>Sign In</span>
-              <MdEast />
-            </button>
-            <button className=' py-3 px-5 text-base  bg-green rounded-lg text-white flex items-center gap-4'>
-              <span>Join</span>
-              <MdEast />
-            </button>
+            <NavLink to={'/login'}>
+              <Button
+                title='Sign In'
+                icon={<MdEast />}
+                color='text-green'
+                bgcolor='white'
+                _style='border border-solid border-green'
+                fontSize='text-base'
+              />
+            </NavLink>
+            <NavLink to={'/register'}>
+              <Button title='Sign In' icon={<MdEast />} />
+            </NavLink>
           </div>
         </div>
         <div className='flex md:hidden flex-col gap-1'>
