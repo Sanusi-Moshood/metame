@@ -1,19 +1,411 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  } 
+  
+  body{ 
+    background-color: #FAFAFA;;
+  }
+  
+  @font-face {
+    font-family: 'ginger';
+    src: url('./fonts/ginger-ext.ttf');
+  }
+  
+  @font-face {
+    font-family: 'ginge';
+    src: url("./fonts/ginger.ttf");
+  }
+  @font-face {
+    font-family: 'core';
+    src: url("./fonts/CoreSansA65Bold-Italic.otf");
+  }
+  
+  
+  
+  
+  .loader_bg{
+   min-height: 100vh;
+    background-image: url('/');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F9DF40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .load_text{
+    padding-top: 50px !important;
+    /* opacity: 0; */
+    display: flex;
+    z-index: 99;
+    gap: 30px;
+    flex-direction: column;
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px 0px 15px;
+    /* backdrop-filter: blur(1px); */
+    font-family: 'ginger';
+    font-size: 50px;
+    text-align: center;
+    color:  rgb(0, 0, 0); 
+  animation: opacity 1s ease-in;
+  }
 
-@font-face {
-  font-family: 'Product Sans';
-  src: url('./fonts/ProductSans-Regular.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'Product Sans';
-  font-weight: bold;
-  src: url('./fonts/ProductSans-Bold.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'Abril Fatface';
-  src: url('./fonts/AbrilFatface-Regular.ttf') format('ttf');
-}
+  @keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+   
+   .loh1 {
+  position: relative;
+   }
+   .loh1::before{
+    content: "It's a Meegos world,";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white; 
+    font-family: 'ginge';
+     
+   }
+   .loh2 {
+  position: relative;
+   }
+   .loh2::before{
+    content: "we are just living in it.";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white; 
+    font-family: 'ginge';
+   }
+  
+  
+  
+   .hexagon {
+    /* top: 100px;
+    left: 20px; */
+    /* z-index: -1; */
+    
+    position: absolute;
+    margin: 0 auto;
+    background-color: #E8CF35;
+    border-radius: 10px;
+    width: 100px; 
+    height: 63px;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    border: 0.4vh solid transparent;
+    transform: rotate(360deg);  
+    animation: rotate 10s ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    0%{
+  
+      transform: rotate(360deg);  
+    }
+    100%{
+      
+    transform: rotate(-360deg);  
+    }
+  }
+  
+  .hexx{
+  
+    top: 0;
+    left: 0;
+  }
+   
+  .hex1{
+    left: 120px;
+    top: 100px;
+    rotate: 10deg;
+  }
+  .hex2{
+    top: 250px;
+    left: 20px;
+    rotate: 50deg;
+    width: 200px; 
+    height: 123px;
+  }
+  .hex3{
+    bottom: 30px;
+  left: 10px;
+  }
+  
+   
+  .hex4{
+    right: 60px;
+    top: 100px;
+    rotate: 10deg;
+  }
+  .hex5{
+    top: 250px;
+    right: 70px;
+    rotate: 50deg;
+    width: 200px; 
+    height: 123px;
+  }
+  .hex6{
+    bottom: 30px;
+  right: 40px;
+  }
+  
+  
+  /* Creating pseudo-class */
+  .hexagon:before, .hexagon:after {
+    content: "";
+    border: inherit;
+    position: absolute;
+    top: -0.5vh;
+    left: -0.5vh;
+    background-color: #E8CF35;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Align them in such a way
+  that they form a hexagon */
+  .hexagon:before {
+    transform: rotate(60deg);
+  }
+  .hexagon:after {
+    transform: rotate(-60deg);
+  }
+  
+  .img1, .img2, .img3, .img4{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    /* position: absolute; */
+  border: 2px solid #E8CF35;
+    background-size: cover;
+    background-position: center;
+    /* mix-blend-mode: multiply; */
+  }
+  .img1{ 
+    background-image: url(/F0SdYGQXgBkIDaH.jpg);
+  
+  }
+  .img2{
+   
+    animation: spread 1s ease-out;
+    background-image: url(/F1QEE__XsAEH-9a.jpg);
+  }
+  
+  .img3{
+   
+    animation: spread 1s ease-out;
+    background-image: url(/F2suf-PXQAAJ9cN.jpg );
+  }
+  .img4{
+   
+    
+    background-image: url(/F2YJWiyXIAEcReG.jpg );
+    animation: spread 1s ease-out;
+  }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @keyframes spread {
+    0%{
+        margin-left: -210px; 
+    }
+    100%{
+        margin-left: 0;
+    }
+  }
+  
+  .images{
+  /* position: relative; */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .about{
+    /* width: 100vw; */
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: 'core';
+  }
+  
+  /* .about .hexagon{
+    mix-blend-mode: multiply;
+  } */
+  
+  .about  .hexagon,.about .hexagon::before, .about .hexagon::after{
+    background-color: #ececec;
+    z-index: -1;
+  }
+  .about_cont{
+  
+    /* background-color: #FAFAFA; */
+    padding: 70px 50px; 
+  }
+  
+  .abhead{
+    font-size: 40px;
+    text-align: center;
+  }
+  .abhead span{
+    font-size: 60px;
+    font-family: 'ginger';
+    position: relative;
+  }
+  
+  .abhead span::before{
+    content: "Solana";
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    color: #F9DF40;
+    font-family: 'ginge';
+  }
+  
+  .abtcent{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+  }
+  
+  .centhead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+  }
+  
+  .centhead h1{
+    font-size: 200px;
+    font-weight: bold;
+    /* letter-spacing: -50px; */
+  }
+  
+  .centhead span{
+    color: #8d8d8d;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -20px;
+  }
+  
+  .centinfo{
+    display: flex; 
+    align-items: center;
+  justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap: 20px 100px;
+  }
+  
+  .centinfo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .centinfo h3 {
+    font-size: 50px;
+  }
+  .centinfo span{
+    font-size: 14px;
+    color: #8d8d8d;
+    margin-top: -5px;
+  }
+  
+  .mint{
+  text-align: center;
+  color: #8d8d8d;
+  margin-top: 50px;
+  }
+  
+  
+  @media (max-width : 900px){
+    .load_text{
+      padding-top: 50px;
+      font-size: 45px;
+    }
+    .img1, .img2, .img3, .img4{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width : 650px){
+    .centhead h1{
+      font-size: 100px;
+    }
+    .centhead span{
+      font-size: 25px;
+    }
+    .load_text{
+      padding-top: 50px;
+      font-size: 40px;
+    }
+    .img1, .img2, .img3, .img4{
+      width: 100px;
+      height: 100px;
+    }
+    .centinfo{
+      
+    gap: 20px 70px;
+    }
+  }
+  
+  
+  
+  .home{
+    height: 100vh;
+  
+    transition: all .5s ease-in-out;
+    /* background-image: url(/CUTE-PINK.png); */
+    background-size: cover;
+    background-position: top;
+  
+    background-image: url(/CUTE-PINK.png);
+    background-color: #8d8d8d;
+    animation: AnimateBg 10s ease-in-out;
+  
+  }
+  
+  
+  @keyframes AnimateBg{
+    0%{
+      
+    background-image: url(/ANGRY-WHITE.png);
+    }
+    25%{
+      
+    background-image: url(/CUTE-YELLOW.png);
+    }
+    50%{
+      
+    background-image: url(/ANXIOUS-RED.png);
+    }
+    75%{
+      
+    background-image: url(/EXCITED-BLUE.png);
+  
+    }
+    100%{
+    background-image: url(/ANXIOUS-WHITE.png);
+    }
+  }
