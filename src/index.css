@@ -22,7 +22,12 @@
   }
   
   
-  
+  .loader_bg .abhead{
+    font-family: 'core';
+  }
+  .loader_bg .abhead span::before{
+    color: white;
+  }
   
   .loader_bg{
    min-height: 100vh;
@@ -32,6 +37,7 @@
     background-size: cover;
     background-color: #F9DF40;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -254,6 +260,7 @@
   
     /* background-color: #FAFAFA; */
     padding: 70px 50px; 
+    padding-bottom: 20px !important;
   }
   
   .abhead{
@@ -265,7 +272,16 @@
     font-family: 'ginger';
     position: relative;
   }
-  
+  .jayboy span::before{
+    content: 'Jayboy' !important;
+  }
+  .jayboy{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .abhead span.meellist::before{
+    content: 'Meelist' !important;
+  }
   .abhead span::before{
     content: "Solana";
     position: absolute;
@@ -381,7 +397,7 @@
     background-position: top;
   
     background-image: url(/CUTE-PINK.png);
-    background-color: #8d8d8d;
+    background-color: #e9e8e8;
     animation: AnimateBg 10s ease-in-out;
   
   }

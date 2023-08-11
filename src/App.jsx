@@ -48,6 +48,10 @@ const [loading, setLoading] = useState(true)
         </div>
       </div>
 
+      <div className='abhead '>
+              <h1 className='abhead jayboy'>Created by <span> Jayboy </span> for    <span className='meellist'> Meelist</span></h1>
+          
+          </div>
     </div>
 {/* 
     //About */}
@@ -94,8 +98,13 @@ const [loading, setLoading] = useState(true)
             </div>
 
             <div className="mint">
-              <span>Mint price and date to be released soon.</span>
+              <span>Mint price and date to be released soon.</span> 
             </div>
+
+            <div className='abhead '>
+              <h1 className='abhead jayboy'>Created by <span> Jayboy </span> for    <span className='meellist'> Meelist</span></h1>
+          
+          </div>
         </div>
     </div>
 
