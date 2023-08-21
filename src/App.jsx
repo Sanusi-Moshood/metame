@@ -83,7 +83,7 @@ const [loading, setLoading] = useState(true)
 </div>
 
 <div className="cardbuild">
-  <h1>Solana is our <span>home - forever</span></h1>
+  <h1>Solana is our <span>home forever</span></h1>
   <div className="cards">
     <img src="g1.jpg" alt="" />
     <img src="g2.jpg" alt="" />
@@ -116,6 +116,11 @@ const [loading, setLoading] = useState(true)
   </div>
 </div>
 
+
+
+<footer>
+  Made by <span> <a href="https://twitter.com/olawale_dev" target='blank'> Olawale.dev</a></span>
+</footer>
 </div>
 )}
 </>
