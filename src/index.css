@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #fafafa; 
+  background-color: #000000; 
+  color: #fafafa;
   font-family: 'Exo 2', sans-serif;
 }
 
@@ -18,7 +19,26 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('/1500x500.jpg');
+  /* background-image: url('/1500x500.jpg'); */
+}
+.video {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('/bg.jpg');
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  
+}
+
+.video video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .loading{
@@ -32,6 +52,7 @@ body {
 .center{
   border: 7px solid #E3BD58;
   border-radius: 50px;
+  
   padding: 50px 70px;
   /* max-width: 300px; */
 position: relative;
@@ -50,11 +71,13 @@ position: relative;
   font-weight: 700;
   font-size: 90px;
   line-height: -5px;
+
 }
 
 .text h1 {
   line-height: 170px;
   color: #E3BD58; 
+
 }
 
 .load_img{
@@ -96,13 +119,128 @@ position: relative;
 
 .home_text{
   display: flex;
+  gap: 20px;
   align-items: center;
   flex-direction: column;
   font-size: 40px;
   font-weight: 600;
   color: #ffffff;
-}
 
+}
+.tsn{
+  text-shadow: none;
+}
 .home_text h1 span{
   color: #E3BD58;
+}
+
+.team{
+  padding: 100px 50px 0px 50px;
+}
+.team h1{
+  padding: 10px;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.team-cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.member{
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.member img{
+  width: 230px;
+  height: 325px;
+  object-fit: cover;
+  border: 2px solid #E3BD58;
+  border-radius: 10px;
+}
+.member div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.team h4{
+  color: #E3BD58;
+}
+
+.sol {
+  padding: 100px 50px 0px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.sol .vid {
+  height: 100%;
+  width: 60% !important;
+}
+
+.sol video, .disci img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #E3BD58;
+  border-radius: 20px;
+}
+
+.sol .tet {
+  text-align: center;
+  font-size: 30px;
+ width: 40%;
+}
+
+.tet span {
+  color: #E3BD58;
+}
+
+.cardbuild{
+  padding: 100px 50px 0px 50px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cardbuild img{ 
+  width: 230px;
+  height: 325px;
+  object-fit: cover;
+  border: 2px solid #E3BD58;
+  border-radius: 10px;
+  
+}
+
+.cardbuild h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cardbuild h1 span{
+  color: #E3BD58;
+}
+
+.disci{
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 100px 50px 20px 50px;
+  gap: 10px;
+}
+
+.disci img{
+  width: 50%;
 }
