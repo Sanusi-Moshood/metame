@@ -85,6 +85,11 @@ const [loading, setLoading] = useState(true)
 <div className="cardbuild">
   <h1>Solana is our <span>home forever</span></h1>
   <div className="cards">
+    <img src="m01.jpg" alt="" />
+    <img src="m02.jpg" alt="" />
+    <img src="m03.jpg" alt="" />
+    <img src="m05.jpg" alt="" />
+    {/* <img src="m0.jpg" alt="" /> */}
     <img src="g1.jpg" alt="" />
     <img src="g2.jpg" alt="" />
     <img src="g5.jpg" alt="" />
@@ -105,6 +110,7 @@ const [loading, setLoading] = useState(true)
     <img src="m14.jpg" alt="" />
     <img src="m15.jpg" alt="" />
     <img src="m16.jpg" alt="" />
+    <img src="m1.png" alt="" />
 
   </div>
 </div>

@@ -264,6 +264,9 @@ position: relative;
   padding: 100px 20px 0px 20px;
   flex-direction: column-reverse;
  }
+ .sol h1{
+  margin-bottom: 15px;
+ }
  .sol .vid, .disci img {
   width: 100% !important;
  }
@@ -278,6 +281,7 @@ position: relative;
  }
  .cardbuild h1 {
   font-size: 30px;
+  margin-bottom: 15px;
  }
   
  .loading .text{
